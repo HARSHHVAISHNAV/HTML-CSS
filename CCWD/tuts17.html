@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <!-- two types of font
+         1. web safe font(already available in the operator)
+         2. web font (need to be downloaded from web) -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+    p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* this is font stack(it is applied acc to the available font in the os) */
+    }
+    /* you can also give span(for giving font to particular word in a line) */
+    #webfont{
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        /* px = 1/96th of an inch */
+        line-height: 2.5em;
+        font-weight:100;
+    }
+    </style>
+</head>
+<body>
+    <h1>Fonts</h1>
+    <p>we will play with fonts they are interesting to play with</p>
+    <p id="webfont">this is downloaded</p>
+</body>
+</html>

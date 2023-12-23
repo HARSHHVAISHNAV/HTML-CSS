@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo properties</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        /* hover active and visited */
+        
+        .container{
+            border: 5px solid black;
+            width: 800px;
+            height: 350px;
+            margin: auto;
+            background-color: rgb(163, 127, 255);
+        }
+        h1{
+            width: 250px;
+            margin: auto;
+            background-color: bisque;
+        }
+        .lb{
+            background-color: azure;
+            text-size-adjust: 13px;
+        }
+        a{
+            text-decoration: none;
+            border: 2px solid black;
+            
+        }
+        .lb:hover{
+            background-color: beige;
+        }
+        .lb:active{
+            background-color: rgb(124, 105, 76);
+        }
+        .lb:visited{
+            background-color: rgb(141, 109, 109);
+        }
+        p{
+            background-color: beige;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h1>This is my site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ratione laborum. Aliquid unde similique voluptatum voluptatibus beatae. Ipsam illo voluptas ipsum sequi ea quaerat corporis optio, minima nostrum esse eius consectetur dolorem, aliquid at blanditiis. Esse reiciendis distinctio beatae exercitationem! Labore quidem, accusamus animi odio deserunt iusto ratione exercitationem quam! </p>
+        
+        <a href="https://www.google.co.in/" class="lb">Read more</a>
+        <button class="lb">Contact us here</button>
+        
+    </div>
+    
+</body>
+</html>

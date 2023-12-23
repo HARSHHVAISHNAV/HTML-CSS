@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+         box-sizing: border-box; 
+         margin: auto;
+         margin-top: 1%;
+
+        }
+        .container{
+            border: 5px solid black;
+            background-color: rgb(158 132 158);
+            width: 700px;
+        }
+        .item{
+            border: 3px solid #c5bac5;
+            margin: auto;
+            
+        }
+        /* float is used to float the para box and clear is used to save it from overlapping */
+        #fruits{
+            width: 300px;
+            float: right;
+            margin: 20px;
+        }
+        #glass{
+            width: 300px;
+            float: left;
+            margin: 20px;
+        }
+        #books{
+            width: 300px;
+            float: left;
+            margin: 20px;
+        }
+        #stationary{
+            clear: both;
+            margin: 20px;
+        }
+        p,h1{
+            text-align: center;
+            /* text-align: justify;
+            text-align: left;
+            text-align: right; */
+        }
+        h2{
+            padding-left: 2.5%;
+            width: 180px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME</h2>
+        <div id="fruits" class="item">
+            <h1>fruits</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam aut quod ea cum accusantium ducimus, totam laudantium animi necessitatibus adipisci modi, harum amet quis vitae dignissimos! Facilis nulla reprehenderit libero ut modi eum vero!</p>
+        </div>
+        <div id="glass" class="item">
+            <h1>glass</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam aut quod ea cum accusantium ducimus, totam laudantium animi necessitatibus adipisci modi, harum amet quis vitae dignissimos! Facilis nulla reprehenderit libero ut modi eum vero!</p>
+        </div>
+        <div id="books" class="item">
+            <h1>books</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam aut quod ea cum accusantium ducimus, totam laudantium animi necessitatibus adipisci modi, harum amet quis vitae dignissimos! Facilis nulla reprehenderit libero ut modi eum vero!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h1>stationary</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam aut quod ea cum accusantium ducimus, totam laudantium animi necessitatibus adipisci modi, harum amet quis vitae dignissimos! Facilis nulla reprehenderit libero ut modi eum vero!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

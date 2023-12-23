@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<!-- this is forms -->
+<body>
+    <h2>
+        This is forms
+    </h2>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <!-- this is for name -->
+        <!-- div tags are given for seperate options -->
+    <div>
+        <input type="text"  name="myName" id="name">
+    </div>
+    <br>
+    <div>
+        Role: <input type="text"  name="myRole" >
+    </div>
+    <br>
+    <!-- this is for email -->
+    <div>
+        Email: <input type="email" name="myEmail" >
+    </div>
+    <br>
+    <!-- this is for date -->
+    <div>
+       Date: <input type="date" name="myDate">
+    </div>
+    <br>
+    <!-- this is for number -->
+    <div>
+       Bonus: <input type="number" name="myNumber" >
+    </div>
+    <br>
+    <!-- this is for options -->
+    <!-- give same name in the name column for amy one item to be selected -->
+    <div>
+       Gender: male <input type="radio" name="myGender" > female <input type="radio" name="myGender">
+    </div>
+    <br>
+    <!-- this is for getting a block to write a passage -->
+    <div>
+         Write about myself:  <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <!-- same as radio type jsut giving two options in diff format -->
+    <!-- the label tag is good practice which guves you the option column -->
+    <!-- selected is written in order if already an option is wanted to be selected before hamd -->
+    <div>
+        <label for="car">Car</label>
+      <select name="myCar" id="car">
+      <option value="ind" selected>Indica</option>
+      <option value="swf">Swift</option>
+    </div>
+    <br>
+    <!-- to have checkbox -->
+    <div>
+        ARE YOU ELIGIBLE:<input type="checkbox" name="myEligibility" >
+    </div>
+    <br>
+    <!-- for submit and reset or refresh option -->
+    <div>
+        <input type="submit" value="Submit now">
+        <input type="reset" value="refresh">
+    </div>
+</form>
+</body>
+</html>

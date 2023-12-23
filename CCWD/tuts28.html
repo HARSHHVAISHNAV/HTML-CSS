@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* all the extra properties are also mentioned */
+        /* All os them are commented use them likewise */
+        .container{
+            width: 100%;
+            height: 600px;
+            border: 2px solid black;
+            display: flex;
+             /* initialize display as flex */
+             /* then give flex direction: ; */
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* default value is no wrap  */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: is a shorthand; */
+            justify-content: center;
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* justify-content: stretch; */
+
+
+        }
+        .item{
+            width: 95px;
+            height: 80px;
+            border: 2px solid black;
+            background-color: tomato;
+            margin: 10px;
+        }
+        #item1{
+            /* the elements will be placed according to their order  */
+            order: 3;
+            /* flex-grow: 3; this gives the property when adjusted*/
+        }
+        #item2{
+            order: 30;
+            /* flex-grow: 4; */
+        }
+        #item3{
+            order: 300;
+            /* flex: 2 2 344px;this is a shor hand used to set flex grow flex column and flex basis respectively */
+            /* flex-basis: 400px;
+            flex basis is width when set to flex direction row and height when set to flex direction  column */
+            /* flex-grow: 10; */
+            /* flex-shrink: is also an property which is opposite; */
+            /* align-self: center; */
+            /* align-self: self-start; */
+            /* align-self: self-end; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">This is Box 1</div>
+        <div class="item" id="item2">This is Box 2</div>
+        <div class="item" id="item3">This is Box 3</div>
+        <!-- <div class="item" id="item4">This is Box 4</div>
+        <div class="item" id="item5">This is Box 5</div>
+        <div class="item" id="item6">This is Box 6</div> -->
+    </div>
+    
+</body>
+</html>
